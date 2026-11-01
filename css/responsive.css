@@ -1,0 +1,726 @@
+@media(min-width:1600px) {
+    .hero {
+        padding-top: 195px
+    }
+
+    .hero-art {
+        right: 4%
+    }
+
+    .hero-description {
+        font-size: 14px
+    }
+
+    .hero-actions {
+        margin-top: 40px
+    }
+}
+
+@media(max-width:1100px) {
+    .header {
+        padding-inline: 5%
+    }
+
+    .desktop-nav {
+        gap: 22px;
+        margin-left: 0
+    }
+
+    .hero {
+        padding-left: 6%;
+        min-height: 760px
+    }
+
+    .hero h1 {
+        font-size: 90px
+    }
+
+    .hero-art {
+        left: 40%
+    }
+
+    .collection-note {
+        left: 10%
+    }
+
+    .section {
+        padding-inline: 6%
+    }
+
+    .section-heading {
+        flex-wrap: wrap
+    }
+
+    .section-heading>p {
+        max-width: 290px
+    }
+
+    .section-heading>.text-link {
+        margin-left: auto
+    }
+
+    .card-caption h3 {
+        font-size: 22px
+    }
+
+    .collection-grid {
+        gap: 16px
+    }
+
+    .story-text h2 {
+        font-size: 68px
+    }
+
+    .about {
+        gap: 8%
+    }
+
+    .about-image {
+        height: 500px
+    }
+
+    .occasion-grid {
+        gap: 12px
+    }
+
+    .occasion {
+        height: 290px
+    }
+
+    .occasion h3 {
+        font-size: 25px
+    }
+
+    .occasion>span {
+        left: 15px
+    }
+
+    .cta-copy h2 {
+        font-size: 57px
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr 1fr 1fr 1fr
+    }
+
+    .footer-top>p {
+        display: none
+    }
+}
+
+@media(max-width:999px) {
+    .header {
+        height: 88px
+    }
+
+    .brand {
+        font-size: 44px
+    }
+
+    .brand>span {
+        font-size: 7px;
+        letter-spacing: 4px;
+        margin-top: 11px
+    }
+
+    .desktop-nav,
+    .header>.nav-order {
+        display: none
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        width: 38px;
+        height: 38px;
+        justify-content: center
+    }
+
+    .menu-toggle span {
+        height: 1px;
+        width: 25px;
+        background: var(--green);
+        transition: transform .3s
+    }
+
+    .menu-toggle[aria-expanded=true] span:first-child {
+        transform: translateY(3.5px) rotate(45deg)
+    }
+
+    .menu-toggle[aria-expanded=true] span:last-child {
+        transform: translateY(-3.5px) rotate(-45deg)
+    }
+
+    #mobile-nav:not([hidden]) {
+        display: flex;
+        position: absolute;
+        top: 77px;
+        inset-inline: 0;
+        background: var(--ivory);
+        border-bottom: 1px solid var(--line);
+        padding: 25px 7%;
+        flex-direction: column;
+        gap: 14px;
+        font: 30px var(--serif)
+    }
+
+    .hero {
+        height: auto;
+        max-height: none;
+        min-height: 1000px;
+        padding: 128px 7% 500px
+    }
+
+    .hero-copy {
+        max-width: 100%
+    }
+
+    .eyebrow {
+        font-size: 8px;
+        letter-spacing: 1.6px
+    }
+
+    .hero h1 {
+        font-size: 78px;
+        letter-spacing: -3px;
+        margin: 28px 0 20px;
+        line-height: .92
+    }
+
+    .hero-description {
+        font-size: 11px
+    }
+
+    .hero-actions {
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 25px
+    }
+
+    .button {
+        padding: 14px 17px;
+        font-size: 10px;
+        gap: 20px
+    }
+
+    .hero-art {
+        inset: 490px -8% 55px 16%;
+        height: 460px
+    }
+
+    .hero-bouquet {
+        width: 90%;
+        height: 113%;
+        bottom: -7%;
+        left: 1%
+    }
+
+    .hero-orbit {
+        width: 100vw;
+        height: 100vw;
+        top: 530px;
+        right: -15%
+    }
+
+    .vertical-note {
+        right: 16%;
+        top: 24%;
+        font-size: 6px
+    }
+
+    .collection-note {
+        left: -7%;
+        bottom: 18%
+    }
+
+    .collection-note>span {
+        font-size: 6px
+    }
+
+    .collection-note p {
+        font-size: 19px
+    }
+
+    .round-seal {
+        width: 86px;
+        height: 86px;
+        right: 13%;
+        bottom: 7%;
+        gap: 5px
+    }
+
+    .round-seal span {
+        font-size: 4.5px;
+        letter-spacing: 1px
+    }
+
+    .round-seal b {
+        font-size: 29px
+    }
+
+    .hero-bottom {
+        bottom: 20px;
+        left: 7%;
+        right: 7%
+    }
+
+    .hero-bottom>p,
+    .hero-index {
+        display: none
+    }
+
+    .hero-bottom .scroll-link {
+        font-size: 7px
+    }
+
+    .values-bar {
+        padding: 20px 7%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px
+    }
+
+    .values-bar span {
+        font-size: 18px;
+        gap: 10px
+    }
+
+    .values-bar b {
+        font-size: 8px
+    }
+
+    .section {
+        padding: 70px 7%
+    }
+
+    .section-heading {
+        display: block;
+        margin-bottom: 30px
+    }
+
+    .section-heading .eyebrow {
+        margin-bottom: 14px
+    }
+
+    h2 {
+        font-size: 48px;
+        letter-spacing: -1.5px
+    }
+
+    .section-heading>p {
+        margin-top: 20px;
+        font-size: 10px;
+        max-width: 100%
+    }
+
+    .section-heading>.text-link {
+        margin-top: 20px
+    }
+
+    .collection-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 28px 15px
+    }
+
+    .collection-card:nth-child(even) {
+        padding-top: 35px
+    }
+
+    .card-caption {
+        margin-top: 11px;
+        align-items: start
+    }
+
+    .card-caption h3 {
+        font-size: 23px;
+        max-width: 120px
+    }
+
+    .image-label {
+        font-size: 5px;
+        left: 11px;
+        bottom: 12px;
+        letter-spacing: .8px
+    }
+
+    .image-arrow {
+        width: 24px;
+        height: 24px;
+        font-size: 15px;
+        right: 10px;
+        top: 10px
+    }
+
+    .story-inner {
+        min-height: 780px;
+        height: auto;
+        padding: 45px 7% 0
+    }
+
+    .story-layout {
+        display: block;
+        height: 680px
+    }
+
+    .story-text {
+        width: 100%;
+        padding-top: 35px
+    }
+
+    .story-text h2 {
+        font-size: 55px;
+        margin: 15px 0
+    }
+
+    .story-description {
+        font-size: 11px;
+        min-height: 0;
+        max-width: 260px
+    }
+
+    .story-progress {
+        margin-top: 20px
+    }
+
+    .story-art {
+        width: 85%;
+        height: 390px;
+        top: 290px;
+        right: -5%
+    }
+
+    .story-side {
+        font-size: 6px;
+        right: 0;
+        top: 60%
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        gap: 60px
+    }
+
+    .about-image {
+        width: 95%;
+        height: 390px;
+        margin-right: auto
+    }
+
+    .about-copy {
+        width: 100%
+    }
+
+    .about-copy>p:not(.eyebrow) {
+        max-width: none
+    }
+
+    .about-copy h2 {
+        margin: 20px 0
+    }
+
+    .slider-buttons {
+        margin-top: 22px;
+        justify-content: flex-end
+    }
+
+    .products {
+        gap: 18px
+    }
+
+    .product {
+        min-width: 82%
+    }
+
+    .product-name h3 {
+        font-size: 28px
+    }
+
+    .experience {
+        padding: 65px 7%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px
+    }
+
+    .experience-copy {
+        width: 100%;
+        max-width: none
+    }
+
+    .experience h2 {
+        margin: 20px 0
+    }
+
+    .experience-copy>p:not(.eyebrow) {
+        font-size: 11px
+    }
+
+    .experience input {
+        max-width: 320px
+    }
+
+    .experience label {
+        max-width: 320px
+    }
+
+    .experience small {
+        font-size: 8px
+    }
+
+    .depth-view {
+        width: 85%;
+        height: 400px
+    }
+
+    .occasion-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px
+    }
+
+    .occasion {
+        height: 260px
+    }
+
+    .occasion>span {
+        left: 14px;
+        bottom: 20px
+    }
+
+    .occasion small {
+        font-size: 5px;
+        letter-spacing: .7px
+    }
+
+    .occasion h3 {
+        font-size: 25px
+    }
+
+    .occasion>b {
+        font-size: 19px;
+        right: 10px;
+        bottom: 17px
+    }
+
+    .quote-content blockquote {
+        font-size: 31px;
+        min-height: 150px
+    }
+
+    .quote-content>p {
+        font-size: 9px
+    }
+
+    .quote-content>p span {
+        display: block;
+        margin-top: 5px
+    }
+
+    .testimonials {
+        padding-block: 60px
+    }
+
+    .masonry {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px
+    }
+
+    .gallery-image:nth-child(1) {
+        height: 250px
+    }
+
+    .gallery-image:nth-child(2) {
+        height: 210px;
+        margin-top: 35px
+    }
+
+    .gallery-image:nth-child(3) {
+        height: 210px;
+        margin-top: 0
+    }
+
+    .gallery-image:nth-child(4) {
+        height: 250px;
+        margin-top: -20px
+    }
+
+    .final-cta {
+        padding: 65px 7% 320px;
+        min-height: 690px;
+        display: block
+    }
+
+    .cta-copy {
+        width: 100%
+    }
+
+    .cta-copy h2 {
+        font-size: 47px
+    }
+
+    .cta-copy>.eyebrow {
+        font-size: 7px
+    }
+
+    .cta-copy>p:not(.eyebrow) {
+        font-size: 10px
+    }
+
+    .cta-flower {
+        width: 80%;
+        height: 440px;
+        left: -12%;
+        top: auto;
+        bottom: -135px;
+        transform: rotate(25deg)
+    }
+
+    .cta-star {
+        top: auto;
+        bottom: 100px;
+        right: 12%;
+        font-size: 55px
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 15px
+    }
+
+    .footer-top>.brand {
+        grid-column: 1/-1;
+        margin-bottom: 15px
+    }
+
+    .footer-top>div:last-child {
+        grid-column: 1/-1
+    }
+
+    .footer-top>div>p {
+        max-width: none
+    }
+
+    .footer-bottom {
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-top: 35px
+    }
+
+    .footer-bottom>span:nth-child(2) {
+        order: 3;
+        flex-basis: 100%
+    }
+
+    footer {
+        padding: 55px 7% 25px
+    }
+
+    .contact-dialog {
+        padding: 40px 25px
+    }
+
+    .contact-dialog h2 {
+        font-size: 40px
+    }
+
+    .contact-dialog blockquote {
+        font-size: 21px
+    }
+
+    .lightbox {
+        padding: 30px 12px 15px
+    }
+}
+
+@media(max-width:360px) {
+    .hero h1 {
+        font-size: 68px
+    }
+
+    .hero-actions {
+        gap: 13px
+    }
+
+    .hero-art {
+        top: 500px
+    }
+
+    .hero .eyebrow {
+        font-size: 6.5px
+    }
+
+    .hero {
+        min-height: 1010px
+    }
+
+    .card-caption h3 {
+        font-size: 20px
+    }
+
+    .occasion h3 {
+        font-size: 22px
+    }
+
+    .cta-copy h2 {
+        font-size: 41px
+    }
+}
+
+@media(min-width:761px) and (max-width:999px) {
+    .hero {
+        min-height: 1080px;
+        padding-top: 145px
+    }
+
+    .hero h1 {
+        font-size: 96px
+    }
+
+    .hero-art {
+        top: 470px;
+        left: 35%;
+        right: 0;
+        height: 520px
+    }
+
+    .hero-copy {
+        max-width: 520px
+    }
+
+    .hero-orbit {
+        width: 75vw;
+        height: 75vw;
+        right: -5%;
+        top: 450px
+    }
+
+    .about-image {
+        height: 650px
+    }
+
+    .occasion {
+        height: 380px
+    }
+
+    .product {
+        min-width: 58%
+    }
+
+    .cta-copy h2 {
+        font-size: 62px
+    }
+
+    .final-cta {
+        padding-bottom: 350px
+    }
+
+    .cta-flower {
+        width: 55%;
+        left: 0
+    }
+
+    .collection-note {
+        left: -20%
+    }
+}

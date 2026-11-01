@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Flora Atelier — A beleza floresce nos detalhes</title>
+    <meta name="description"
+        content="Um ateliê de flores e afetos. Conheça buquês autorais, arranjos da estação e criações para celebrar os seus momentos.">
+    <meta property="og:title" content="Flora Atelier — Arte em flores">
+    <meta property="og:description" content="Flores escolhidas com intenção. Arranjos feitos para sentir.">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://flora-atelier-boutique-3010.genialeel1.chatgpt.site/assets/images/hero.webp">
+    <meta name="theme-color" content="#253B32">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Crect width='80' height='80' rx='40' fill='%23253B32'/%3E%3Ctext x='27' y='58' fill='%23F5F1E9' font-family='Georgia' font-size='56'%3Ef%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script defer src="js/gsap.min.js"></script>
+    <script defer src="js/ScrollTrigger.min.js"></script>
+    <script defer src="js/ScrollSmoother.min.js"></script>
+    <script defer src="js/SplitText.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</head>
+
+<body>
+    <a class="skip" href="#colecoes">Pular para o conteúdo</a>
+    <div class="preloader" aria-hidden="true"><span class="brand">flora<span>ATELIER</span></span><i></i></div>
+    <header class="header"><a class="brand" href="#inicio"
+            aria-label="Flora Atelier, início">flora<span>ATELIER</span></a>
+        <nav class="desktop-nav" aria-label="Navegação principal"><a href="#colecoes">Coleções</a><a href="#atelie">O
+                ateliê</a><a href="#ocasioes">Ocasiões</a><a href="#galeria">Nosso olhar</a></nav><a
+            class="nav-order order" data-message="Olá! Gostaria de encomendar flores da Flora Atelier."
+            href="#contato">Encomendar flores <span>↗</span></a><button class="menu-toggle" aria-expanded="false"
+            aria-controls="mobile-nav" aria-label="Abrir menu"><span></span><span></span></button>
+        <nav id="mobile-nav" aria-label="Menu mobile" hidden><a href="#colecoes">Coleções</a><a href="#atelie">O
+                ateliê</a><a href="#ocasioes">Ocasiões</a><a href="#galeria">Nosso olhar</a><a
+                href="#contato">Encomendar</a></nav>
+    </header>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <main>
+                <section class="hero" id="inicio" aria-labelledby="hero-title">
+                    <div class="hero-orbit" aria-hidden="true"></div><canvas id="petals" aria-hidden="true"></canvas>
+                    <div class="hero-copy">
+                        <p class="eyebrow"><span class="small-flower">✳</span> NATUREZA EM SUA FORMA MAIS SENSÍVEL</p>
+                        <h1 id="hero-title" aria-label="A beleza floresce nos detalhes.">A beleza<br> floresce nos<br>
+                            <em>detalhes.</em></h1>
+                        <p class="hero-description">Flores que traduzem sentimentos.<br> Criações autorais para tornar o
+                            cotidiano<br> e os grandes momentos inesquecíveis.</p>
+                        <div class="hero-actions"><a class="button dark magnetic" href="#colecoes">Explorar coleções
+                                <span>↗</span></a><a class="text-link order" href="#contato"
+                                data-message="Olá! Gostaria de encomendar um arranjo autoral.">Encomendar flores
+                                <span>↗</span></a></div>
+                    </div>
+                    <div class="hero-art">
+                        <div class="art-aura"></div><span class="vertical-note">FEITO À MÃO. SENTIDO COM A
+                            ALMA.</span><img class="hero-bouquet" src="assets/images/hero.webp" width="1024"
+                            height="1536"
+                            alt="Arranjo autoral de rosas pêssego, flores creme e folhagens em vaso de cobre"
+                            fetchpriority="high">
+                        <div class="collection-note"><span>01 / EDIÇÃO BOTÂNICA</span>
+                            <p>O extraordinário<br> mora no natural.</p>
+                        </div><a href="#estacao" class="round-seal"
+                            aria-label="Descubra a coleção da estação"><span>COLHIDAS COM
+                                AMOR</span><b>✳</b><span>CRIADAS PARA SENTIR</span></a>
+                    </div>
+                    <div class="hero-bottom"><a href="#colecoes" class="scroll-link"><span>↓</span> UM NOVO OLHAR PARA
+                            AS FLORES</a>
+                        <p>Design floral autoral <i>—</i> feito para você</p><span class="hero-index">EST. 2024</span>
+                    </div>
+                </section>
+                <div class="values-bar"><span>✳ <b>Criações autorais</b></span><span>↗ <b>Entrega com
+                            cuidado</b></span><span>❋ <b>Flores da estação</b></span><span>♡ <b>Afeto em cada
+                            detalhe</b></span></div>
+                <section class="section collections" id="colecoes">
+                    <div class="section-heading reveal">
+                        <div>
+                            <p class="eyebrow">01 / NOSSAS COLEÇÕES</p>
+                            <h2>Para cada sentir,<br> <em>uma flor.</em></h2>
+                        </div>
+                        <p>Gestos que acolhem, surpreendem e aproximam.<br> Encontre a criação que conta a sua história.
+                        </p><a class="text-link" href="#estacao">Ver todas as criações ↗</a>
+                    </div>
+                    <div class="collection-grid"><a class="collection-card reveal order" href="#contato"
+                            data-message="Olá! Gostaria de conhecer os buquês exclusivos da Flora Atelier.">
+                            <div class="image-wrap"><img src="assets/images/bouquet.jpg"
+                                    alt="Buquê delicado com flores cor-de-rosa e brancas" loading="lazy"><span
+                                    class="image-arrow">↗</span><span class="image-label">UM GESTO DE AFETO</span></div>
+                            <div class="card-caption">
+                                <h3>Buquês exclusivos</h3><span>01</span>
+                            </div>
+                        </a><a class="collection-card reveal order" href="#contato"
+                            data-message="Olá! Gostaria de conhecer as flores da estação.">
+                            <div class="image-wrap"><img src="assets/images/season.jpg"
+                                    alt="Flores delicadas em luz natural" loading="lazy"><span
+                                    class="image-arrow">↗</span><span class="image-label">A BELEZA DO AGORA</span></div>
+                            <div class="card-caption">
+                                <h3>Flores da estação</h3><span>02</span>
+                            </div>
+                        </a><a class="collection-card reveal order" href="#contato"
+                            data-message="Olá! Gostaria de conhecer os arranjos premium.">
+                            <div class="image-wrap"><img src="assets/images/hero.webp" class="contain floral-bg"
+                                    alt="Arranjo premium em vaso escultórico" loading="lazy"><span
+                                    class="image-arrow">↗</span><span class="image-label">ARTE PARA HABITAR</span></div>
+                            <div class="card-caption">
+                                <h3>Arranjos premium</h3><span>03</span>
+                            </div>
+                        </a><a class="collection-card reveal order" href="#contato"
+                            data-message="Olá! Gostaria de conhecer os presentes especiais.">
+                            <div class="image-wrap"><img src="assets/images/roses.jpg"
+                                    alt="Flores rosadas para presentear" loading="lazy"><span
+                                    class="image-arrow">↗</span><span class="image-label">MEMÓRIAS EM FLOR</span></div>
+                            <div class="card-caption">
+                                <h3>Presentes especiais</h3><span>04</span>
+                            </div>
+                        </a></div>
+                </section>
+                <section class="story-section" aria-label="Do primeiro botão ao arranjo">
+                    <div class="story-inner">
+                        <p class="eyebrow">A POESIA DO PROCESSO</p>
+                        <div class="story-layout">
+                            <div class="story-text"><span class="story-number">01 — 03</span>
+                                <h2>Primeiro,<br> um <em>encontro.</em></h2>
+                                <p class="story-description">Escolhemos cada flor pelo que ela tem de único. A curva de
+                                    uma haste. A textura de uma pétala.</p>
+                                <div class="story-progress"><i></i></div>
+                            </div>
+                            <div class="story-art"><img src="assets/images/hero.webp" loading="lazy"
+                                    alt="Composição floral que se revela ao rolar a página"><span
+                                    class="story-circle"></span></div>
+                            <p class="story-side">DA NATUREZA PARA A SUA HISTÓRIA</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="section about" id="atelie">
+                    <div class="about-image reveal"><img src="assets/images/florist.webp"
+                            alt="Florista preparando um arranjo de flores pêssego e creme na bancada do ateliê"
+                            loading="lazy"><span class="photo-note">UM ATELIÊ DE FLORES E AFETOS.</span></div>
+                    <div class="about-copy reveal">
+                        <p class="eyebrow">02 / A ESSÊNCIA DO ATELIÊ</p>
+                        <h2>Mais que flores.<br> <em>Um jeito de sentir.</em></h2>
+                        <p>Acreditamos na beleza que não precisa de ocasião. Na delicadeza de um gesto e na força de uma
+                            memória.</p>
+                        <p>No Flora Atelier, cada criação nasce de um olhar atento à natureza. Respeitamos o tempo das
+                            flores, suas formas imperfeitas e suas combinações inesperadas. O resultado é sempre único.
+                            Como quem recebe.</p><span class="signature">Com afeto, Flora.</span><a
+                            class="text-link order" href="#contato"
+                            data-message="Olá! Quero conhecer o trabalho do Flora Atelier.">Conheça o nosso ateliê ↗</a>
+                    </div>
+                </section>
+                <section class="section seasonal" id="estacao">
+                    <div class="section-heading reveal">
+                        <div>
+                            <p class="eyebrow">03 / DESTAQUES DA ESTAÇÃO</p>
+                            <h2>O tempo de <em>florescer.</em></h2>
+                        </div>
+                        <p>Uma seleção da natureza, um toque do ateliê.<br> Disponibilidade e flores variam com a
+                            estação.</p>
+                        <div class="slider-buttons"><button data-slide="-1"
+                                aria-label="Produtos anteriores">←</button><button data-slide="1"
+                                aria-label="Próximos produtos">→</button></div>
+                    </div>
+                    <div class="products">
+                        <article class="product reveal">
+                            <div class="product-photo"><span class="tag">FAVORITO DO ATELIÊ</span><img
+                                    src="assets/images/bouquet.jpg" alt="Buquê Aurora com flores em tons suaves"
+                                    loading="lazy"><button class="quick-order order"
+                                    data-message="Olá! Gostaria de encomendar o Buquê Aurora, a partir de R$ 189."
+                                    aria-label="Encomendar Buquê Aurora">↗</button></div>
+                            <div class="product-name">
+                                <h3>Buquê Aurora</h3><span>R$ 189</span>
+                            </div>
+                            <p>Delicadeza em tons de amanhecer.</p><a class="text-link order" href="#contato"
+                                data-message="Olá! Gostaria de encomendar o Buquê Aurora.">Encomendar ↗</a>
+                        </article>
+                        <article class="product reveal">
+                            <div class="product-photo sage"><span class="tag">EDIÇÃO BOTÂNICA</span><img class="contain"
+                                    src="assets/images/hero.webp" alt="Arranjo Jardim Secreto em vaso de cobre"
+                                    loading="lazy"><button class="quick-order order"
+                                    data-message="Olá! Gostaria de encomendar o Jardim Secreto, a partir de R$ 329."
+                                    aria-label="Encomendar Jardim Secreto">↗</button></div>
+                            <div class="product-name">
+                                <h3>Jardim Secreto</h3><span>R$ 329</span>
+                            </div>
+                            <p>Uma pequena obra da natureza.</p><a class="text-link order" href="#contato"
+                                data-message="Olá! Gostaria de encomendar o Jardim Secreto.">Encomendar ↗</a>
+                        </article>
+                        <article class="product reveal">
+                            <div class="product-photo"><img src="assets/images/roses.jpg"
+                                    alt="Flores rosadas da criação Rosa dos Ventos" loading="lazy"><button
+                                    class="quick-order order"
+                                    data-message="Olá! Gostaria de encomendar Rosa dos Ventos, a partir de R$ 249."
+                                    aria-label="Encomendar Rosa dos Ventos">↗</button></div>
+                            <div class="product-name">
+                                <h3>Rosa dos Ventos</h3><span>R$ 249</span>
+                            </div>
+                            <p>Para os amores que nos encontram.</p><a class="text-link order" href="#contato"
+                                data-message="Olá! Gostaria de encomendar Rosa dos Ventos.">Encomendar ↗</a>
+                        </article>
+                        <article class="product reveal">
+                            <div class="product-photo"><img src="assets/images/season.jpg"
+                                    alt="Flores delicadas da criação Brisa da Estação" loading="lazy"><button
+                                    class="quick-order order"
+                                    data-message="Olá! Gostaria de encomendar Brisa da Estação, a partir de R$ 159."
+                                    aria-label="Encomendar Brisa da Estação">↗</button></div>
+                            <div class="product-name">
+                                <h3>Brisa da Estação</h3><span>R$ 159</span>
+                            </div>
+                            <p>A leveza dos pequenos começos.</p><a class="text-link order" href="#contato"
+                                data-message="Olá! Gostaria de encomendar Brisa da Estação.">Encomendar ↗</a>
+                        </article>
+                    </div>
+                    <p class="demo-note">Coleção ilustrativa · Preços demonstrativos, a partir dos valores indicados.
+                    </p>
+                </section>
+                <section class="experience">
+                    <div class="experience-copy reveal">
+                        <p class="eyebrow">UM OUTRO PONTO DE VISTA</p>
+                        <h2>A beleza tem<br> <em>muitas camadas.</em></h2>
+                        <p>Explore a composição. Mova o olhar e descubra os detalhes que tornam cada criação única.</p>
+                        <label for="depth">Mude a perspectiva <span>↔</span></label><input id="depth" type="range"
+                            min="-20" max="20" value="0" aria-label="Perspectiva da composição em camadas"><button
+                            class="text-link" id="pause-view" aria-pressed="false">Pausar movimento
+                            Ⅱ</button><small>Experiência visual em camadas 2.5D.</small>
+                    </div>
+                    <div class="depth-view">
+                        <div class="depth-ring"></div><img src="assets/images/hero.webp"
+                            alt="Arranjo floral explorável em camadas 2.5D" loading="lazy"><span>COMPOSIÇÃO Nº 01 /
+                            JARDIM SECRETO</span>
+                    </div>
+                </section>
+                <section class="section occasions" id="ocasioes">
+                    <div class="section-heading reveal">
+                        <div>
+                            <p class="eyebrow">04 / OCASIÕES ESPECIAIS</p>
+                            <h2>Há momentos que<br> pedem <em>flores.</em></h2>
+                        </div>
+                        <p>De um “lembrei de você” ao “sim” mais esperado.<br> Criamos para aquilo que merece ser
+                            celebrado.</p>
+                    </div>
+                    <div class="occasion-grid"><a href="#contato" class="occasion reveal order"
+                            data-message="Olá! Quero flores para um aniversário."><img src="assets/images/season.jpg"
+                                alt="Flores para celebrar aniversários" loading="lazy"><span><small>CELEBRAR A
+                                    VIDA</small>
+                                <h3>Aniversários</h3>
+                            </span><b>↗</b></a><a href="#contato" class="occasion reveal order"
+                            data-message="Olá! Quero conversar sobre flores para um casamento."><img
+                                src="assets/images/wedding.jpg" alt="Celebração de casamento ao ar livre"
+                                loading="lazy"><span><small>O SEU GRANDE DIA</small>
+                                <h3>Casamentos</h3>
+                            </span><b>↗</b></a><a href="#contato" class="occasion reveal order"
+                            data-message="Olá! Quero um arranjo para uma data especial."><img
+                                src="assets/images/bouquet.jpg" alt="Buquê para uma data especial"
+                                loading="lazy"><span><small>GUARDAR NA MEMÓRIA</small>
+                                <h3>Datas especiais</h3>
+                            </span><b>↗</b></a><a href="#contato" class="occasion reveal order"
+                            data-message="Olá! Procuro flores para um presente romântico."><img
+                                src="assets/images/roses.jpg" alt="Flores para um gesto romântico"
+                                loading="lazy"><span><small>DIZER SEM PALAVRAS</small>
+                                <h3>Para amar</h3>
+                            </span><b>↗</b></a></div>
+                </section>
+                <section class="testimonials section" aria-label="Depoimentos ilustrativos">
+                    <p class="eyebrow">AFETOS QUE FLORESCEM</p><span class="quote-mark">“</span>
+                    <div class="quote-content" aria-live="polite">
+                        <blockquote id="quote-text">Não era apenas um buquê. Era exatamente o que eu queria dizer,
+                            traduzido em flores.</blockquote>
+                        <p id="quote-name">Marina A. <span>— um presente para lembrar</span></p>
+                    </div>
+                    <div class="quote-controls"><button id="quote-prev" aria-label="Depoimento anterior">←</button><span
+                            id="quote-count">01 / 03</span><button id="quote-next"
+                            aria-label="Próximo depoimento">→</button></div>
+                    <p class="demo-note">Depoimentos fictícios, apresentados para demonstração.</p>
+                </section>
+                <section class="section gallery" id="galeria">
+                    <div class="section-heading reveal">
+                        <div>
+                            <p class="eyebrow">05 / NOSSO OLHAR</p>
+                            <h2>Instantes <em>em flor.</em></h2>
+                        </div>
+                        <p>Um diário de texturas, cores e pequenos encantos.</p><a class="text-link" href="#contato"
+                            data-social>Instagram ↗</a>
+                    </div>
+                    <div class="masonry"><button class="gallery-image reveal" data-full="assets/images/roses.jpg"><img
+                                src="assets/images/roses.jpg" alt="Detalhes das pétalas em tons de rosa"
+                                loading="lazy"><span>Ampliar ↗</span></button><button class="gallery-image reveal"
+                            data-full="assets/images/season.jpg"><img src="assets/images/season.jpg"
+                                alt="Luz de primavera entre flores delicadas" loading="lazy"><span>Ampliar
+                                ↗</span></button><button class="gallery-image reveal"
+                            data-full="assets/images/bouquet.jpg"><img src="assets/images/bouquet.jpg"
+                                alt="Um buquê preparado com afeto" loading="lazy"><span>Ampliar ↗</span></button><button
+                            class="gallery-image reveal" data-full="assets/images/atelier.jpg"><img
+                                src="assets/images/atelier.jpg" alt="Poesia botânica na mesa do ateliê"
+                                loading="lazy"><span>Ampliar ↗</span></button></div>
+                </section>
+                <section class="final-cta" id="contato">
+                    <div class="cta-flower"><img src="assets/images/hero.webp" alt="" loading="lazy"></div>
+                    <div class="cta-copy reveal">
+                        <p class="eyebrow">O PRÓXIMO GESTO PODE SER SEU</p>
+                        <h2>Transforme momentos<br> em memórias <em>floridas.</em></h2>
+                        <p>Conte a sua história. A gente cuida das flores.</p><a class="button light magnetic order"
+                            href="#contato"
+                            data-message="Olá! Quero transformar um momento em uma memória florida. Podem me ajudar?">Vamos
+                            criar algo especial <span>↗</span></a>
+                    </div><span class="cta-star" aria-hidden="true">✳</span>
+                </section>
+            </main>
+            <footer>
+                <div class="footer-top"><a class="brand" href="#inicio">flora<span>ATELIER</span></a>
+                    <p>Flores. Afetos. Histórias.</p>
+                    <div><span>EXPLORE</span><a href="#colecoes">Coleções</a><a href="#atelie">O ateliê</a><a
+                            href="#galeria">Nosso olhar</a></div>
+                    <div><span>VAMOS CONVERSAR</span><a class="order" href="#contato"
+                            data-message="Olá! Gostaria de falar com o Flora Atelier.">WhatsApp ↗</a><a href="#contato"
+                            data-social>Instagram ↗</a>
+                        <p data-contact-email></p>
+                    </div>
+                    <div><span>VISITE O ATELIÊ</span>
+                        <p data-address></p>
+                        <p data-hours></p>
+                    </div>
+                </div>
+                <div class="footer-bottom"><span>© <span id="year">2026</span> Flora Atelier.</span><span>Projeto
+                        demonstrativo · Marca fictícia</span><a href="#inicio">Voltar ao topo ↑</a></div>
+            </footer>
+        </div>
+    </div>
+    <dialog class="contact-dialog" id="contact-dialog" aria-labelledby="contact-title"><button class="dialog-close"
+            data-close aria-label="Fechar">×</button>
+        <p class="eyebrow">FLORA ATELIER / DEMONSTRAÇÃO</p>
+        <h2 id="contact-title">Um gesto começa<br> com uma <em>conversa.</em></h2>
+        <p>O WhatsApp deste ateliê ainda não foi personalizado. Esta seria a sua mensagem:</p>
+        <blockquote id="order-message"></blockquote><button class="button dark" id="copy-message">Copiar mensagem
+            ↗</button>
+        <p id="copy-status" role="status"></p><small>Configure o número real em js/config.js para ativar o
+            envio.</small>
+    </dialog>
+    <dialog id="lightbox" class="lightbox" aria-label="Fotografia ampliada"><button class="dialog-close" data-close
+            aria-label="Fechar fotografia">×</button><img src="" alt="">
+        <p></p>
+    </dialog>
+</body>
+
+</html>

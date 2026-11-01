@@ -1,0 +1,63 @@
+@keyframes loader-out {
+    to {
+        opacity: 0;
+        visibility: hidden
+    }
+}
+
+@keyframes loader-line {
+    from {
+        transform: scaleX(0)
+    }
+
+    to {
+        transform: scaleX(1)
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        translate: 0 0;
+        rotate: -1deg
+    }
+
+    50% {
+        translate: 0 -12px;
+        rotate: 1deg
+    }
+}
+
+.depth-view.paused img {
+    animation-play-state: paused
+}
+
+.reveal {
+    transition: opacity .6s
+}
+
+.image-wrap {
+    clip-path: inset(0)
+}
+
+@media(prefers-reduced-motion:reduce) {
+
+    *,
+    *:before,
+    *:after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important
+    }
+
+    .preloader {
+        display: none
+    }
+
+    .hero-bouquet,
+    .reveal {
+        opacity: 1 !important;
+        transform: none !important
+    }
+}
